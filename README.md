@@ -1,31 +1,39 @@
-# BBC Sport UI Automation Framework
+# BBC Sport UI Automation
 
-This project automates a simple search scenario on the BBC Sport website using Playwright, TypeScript, and Cucumber (BDD).
+This is a simple Playwright + Cucumber + TypeScript test automation framework built to automate the BBC Sport website's search feature.
 
-## Scenario
+## Why this project exists
 
-- Open BBC Sport Homepage
-- Click on the search icon
-- Search for "Sport in 2023"
-- Verify at least 4 results are found
+The goal of this project is to demonstrate how frontend UI tests can be written using modern tools in a structured and scalable way. It follows a clean Page Object Model structure and includes Cucumber for writing BDD-style test scenarios.
 
-## How to Run
+## Tech stack
 
-1. Install dependencies
+- Playwright (for browser automation)
+- Cucumber.js (for BDD step definitions)
+- TypeScript (for strict typing and clean code)
+- Multiple Cucumber HTML Reporter (for generating test reports)
 
-```
+## Project structure
+
+features/ → Gherkin feature files
+step_definitions/ → Step definition files
+page-objects/ → Page Object classes and locators
+support/ → Hooks and World context
+reports/ → Auto-generated test reports (excluded from Git)
+
+
+## How to run the tests
+
+must have Node.js installed.
+
+1. Install dependencies:
+
+
 npm install
-```
+##  Run the test 
 
-2. Run the test
-
-```
 npx cucumber-js
-```
 
-## Project Structure
-
-- `features/` - BDD feature files
-- `step_definitions/` - Cucumber step definitions
-- `page-objects/` - Page Object Model files
-- `config/` - Configuration (e.g., base URL)
+Author
+Ravi Pratap
+https://github.com/ravipratap8
