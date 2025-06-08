@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": ["@types/node", "cucumber", "playwright"],
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "support/**/*.ts",
+    "support/**/*.d.ts",
+    "step_definitions/**/*.ts",
+    "page-objects/**/*.ts",
+    "features/**/*.ts"
+  ]
+}
